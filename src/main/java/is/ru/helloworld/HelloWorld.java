@@ -16,6 +16,10 @@ public class HelloWorld {
                 Integer b = Integer.valueOf(request.queryParams("b"));
                 return a + b;
             }
+	post(new Route("/add") {
+	public Object handle(Request request, Response response) {
+		Integer a = Integer.valueOf(request.queryParams("location"));
+		return location;
         });
     }
 }
